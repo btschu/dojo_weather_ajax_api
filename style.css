@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* top navigation bar*/
+
+#top {
+    /* display: flex; */
+    background-color: #9fc5f7;
+    margin: 0 auto;
+    display: flex;
+    height: 75px;
+    align-items: center;
+}
+
+#city {
+    margin: 15px 0 0 40px;
+}
+
+#myBtn {
+    border-color: black;
+    background-color: #c1c1c1;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+#nav-bar {
+    /* display: flex; */
+    color: white;
+    margin: 0 auto;
+    width: 800px;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.high::after, .low::after {
+    content: "°";
+}
+
+ul, ul a {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    margin-left: 60px;
+    font-size: 20px;
+}
+
+/* main container */
+
+h2:first-letter {
+    text-transform:capitalize;
+}
+
+#main-container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* header */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    border-bottom: 3px solid black;
+}
+
+/* weather cards */
+
+#weather-cards {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 0;
+    /* height: 300px; */
+}
+
+#weather-cards img {
+    width: 100px;
+    border-radius: 50%;
+    padding: 20px
+}
+
+.day {
+    padding: 20px;
+    background-color: #c1c1c1;
+}
+
+.temp {
+    margin-top: 20px;
+    word-spacing: 50px;
+}
+
+.high {
+    color: red;
+}
+
+.low {
+    color: blue;
+}
+
+/* cookies */
+
+#cookies {
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid black;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    width: 754px;
+    bottom: 70px;
+}
+
+#cookie-text {
+    margin: 0 20px;
+}
+
+#cookie-btn {
+    border-color: black;
+    background-color: #9fc5f7;
+    box-shadow: 4px 4px 2px 0px black;
+    width: 115px;
+    height: 30px;
+}
+
+/* footer */
+
+#footer {
+    background-color: gray;
+    width: 100%;
+    height: 40px;
+    border-top: 3px solid black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
