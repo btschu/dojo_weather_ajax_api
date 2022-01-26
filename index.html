@@ -9,7 +9,6 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-
     <!-- top navigation bar -->
     <div id="top">
         <div id="nav-bar">
@@ -17,13 +16,12 @@
                 <h1>DojoWeather</h1>
                 <div>
                     <input type='text' name='city' class='city' id='city' placeholder="Enter a City">
-                    <button id="myBtn" onclick="locationChange()">Search</button>
+                    <button id="myBtn" onclick="locationChange(this)">Search</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- end top navigation bar -->
-
     <!-- main container -->
     <div id="main-container">
     <!-- header -->
@@ -38,48 +36,20 @@
             </div>
         </div>
     <!-- end header -->
-    
     <!-- weather cards -->
         <div id="weather-cards">
             <div class="day">
                 <h3></h3>
-                <img src="assets/some_rain.png" alt="Rain Cloud">
-                <p>some rain</p>
+                <img id="weatherImg" src="" alt="">
+                <h4></h4>
+                <h4 id="currentTemp"></h4>
                 <div class="temp">
-                    <span class="high" id="temp1">24</span>
-                    <span class="low" id="temp2">18</span>
-                </div>
-            </div>
-            <div class="day">
-                <h3></h3>
-                <img src="assets/some_sun.png" alt="Sunny">
-                <p>some sun</p>
-                <div class="temp">
-                    <span class="high" id="temp3">27</span>
-                    <span class="low" id="temp4">19</span>
-                </div>
-            </div>
-            <div class="day">
-                <h3></h3>
-                <img src="assets/some_clouds.png" alt="Cloudy">
-                <p>some clouds</p>
-                <div class="temp">
-                    <span class="high" id="temp5">21</span>
-                    <span class="low" id="temp6">16</span>
-                </div>
-            </div>
-            <div class="day">
-                <h3></h3>
-                <img src="assets/some_sun.png" alt="Sunny">
-                <p>some sun</p>
-                <div class="temp">
-                    <span class="high" id="temp7">26</span>
-                    <span class="low" id="temp8">21</span>
+                    <span class="high" id="high"></span>
+                    <span class="low" id="low"></span>
                 </div>
             </div>
         </div>
     <!-- end weather cards -->
-    
     <!-- cookies -->
         <div id="cookies">
             <img src="assets/cookie.png" alt="Cookie Picture">
@@ -91,10 +61,8 @@
         </div>
     </div>
     <!-- end main container and cookies -->
-    
     <!-- footer -->
     <div id="footer"></div>
     <!-- end footer -->
-
 </body>
 </html>
