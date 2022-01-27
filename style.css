@@ -79,11 +79,11 @@ h2:first-letter {
     justify-content: center;
     text-align: center;
     padding: 20px 0;
-    background-color: #c1c1c1;
+    /* background-color: #c1c1c1; */
     /* height: 1000px; */
 }
 
-h3 {
+h3, h4 {
     font-size: 30px;
 }
 
@@ -113,11 +113,11 @@ h3 {
     font-size: 30px;
 }
 
-.high {
+#high {
     color: red;
 }
 
-.low {
+#low {
     color: blue;
 }
 
